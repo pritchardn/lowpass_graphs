@@ -14,7 +14,7 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": "",
-        "numLGNodes": 6
+        "numLGNodes": 8
     },
     "nodeDataArray": [
         {
@@ -133,8 +133,8 @@
             "key": -5,
             "text": "window",
             "description": "In-memory storage of intermediate data products",
-            "x": 712,
-            "y": 201.5,
+            "x": 482,
+            "y": 198.5,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -214,8 +214,8 @@
             "key": -6,
             "text": "signal",
             "description": "In-memory storage of intermediate data products",
-            "x": 688.5,
-            "y": 124.5,
+            "x": 401.5,
+            "y": 71.5,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -295,8 +295,8 @@
             "key": -1,
             "text": "LP_SignalGenerator",
             "description": "Generates a noisy sine signal for filtering. Effectively an input generator.",
-            "x": 447.5,
-            "y": 80.5,
+            "x": 196.5,
+            "y": 76.5,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -427,8 +427,8 @@
             "key": -2,
             "text": "LP_WindowGenerator",
             "description": "Generates a Hann window for low-pass filtering.",
-            "x": 403.5,
-            "y": 215.5,
+            "x": 200.5,
+            "y": 193.5,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -651,6 +651,252 @@
             "outputApplicationType": "None",
             "outputApplicationKey": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -7,
+            "text": "LPAddNoise",
+            "description": "Component to add additional noise to a signal array.",
+            "x": 615.5,
+            "y": 70.5,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": false,
+            "git_url": "dlg_lowpass_components",
+            "sha": "d6ecc621",
+            "inputPorts": [
+                {
+                    "Id": "60d7ccdc-865a-4d01-b70e-70b2c2bbf358",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "float",
+                    "description": " Numpy array containing incoming signal (string dump of floats)"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "f25d73d3-8ea1-4a10-95bc-30e17947c582",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "float",
+                    "description": " Numpy array containing final signal (purely real (floats))"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg_lowpass_components.LPAddNoise",
+                    "defaultValue": "dlg_lowpass_components.LPAddNoise",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Average noise",
+                    "name": "noise",
+                    "value": 0,
+                    "defaultValue": "0.0",
+                    "description": "The average value of the injected noise signal",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Sample rate",
+                    "name": "samplerate",
+                    "value": 5000,
+                    "defaultValue": "5000",
+                    "description": "The sample rate of the signal",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Standard deviation",
+                    "name": "stddiv",
+                    "value": 1,
+                    "defaultValue": "1.0",
+                    "description": "The standard deviation of the noise signal",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Noise frequency",
+                    "name": "frequency",
+                    "value": 1200,
+                    "defaultValue": "1200",
+                    "description": "The frequency of the noise",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Random seed",
+                    "name": "randomseed",
+                    "value": 42,
+                    "defaultValue": "42",
+                    "description": "Random seed of the noise generator",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Noise multiplier",
+                    "name": "noisemultiplier",
+                    "value": 0.1,
+                    "defaultValue": "0.1",
+                    "description": "A gain factor for the injected noise (alpha).",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "Memory",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "signal",
+            "description": "In-memory storage of intermediate data products",
+            "x": 779.5,
+            "y": 99.5,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": true,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "b8c2322",
+            "inputPorts": [
+                {
+                    "Id": "dec03f67-d298-45e4-9234-0edcd07a5190",
+                    "IdText": "signal",
+                    "text": "signal",
+                    "event": false,
+                    "type": "signal",
+                    "description": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "5a57b651-73f9-493a-ac53-088dae43957d",
+                    "IdText": "signal",
+                    "text": "signal",
+                    "event": false,
+                    "type": "signal",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -669,13 +915,6 @@
             "loop_aware": "0"
         },
         {
-            "from": -6,
-            "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
-            "to": -3,
-            "toPort": "695549fd-7edb-4e63-83eb-4a9ac120026b",
-            "loop_aware": "0"
-        },
-        {
             "from": -3,
             "fromPort": "401927f3-c561-4bdc-9243-ea48482185ff",
             "to": -4,
@@ -687,6 +926,27 @@
             "fromPort": "e60155ac-d76a-4ca5-b6c1-826a86a0461a",
             "to": -6,
             "toPort": "8943e2d1-28e6-4d9a-b315-b500daea299b",
+            "loop_aware": "0"
+        },
+        {
+            "from": -6,
+            "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
+            "to": -7,
+            "toPort": "60d7ccdc-865a-4d01-b70e-70b2c2bbf358",
+            "loop_aware": "0"
+        },
+        {
+            "from": -7,
+            "fromPort": "f25d73d3-8ea1-4a10-95bc-30e17947c582",
+            "to": -8,
+            "toPort": "dec03f67-d298-45e4-9234-0edcd07a5190",
+            "loop_aware": "0"
+        },
+        {
+            "from": -8,
+            "fromPort": "5a57b651-73f9-493a-ac53-088dae43957d",
+            "to": -3,
+            "toPort": "695549fd-7edb-4e63-83eb-4a9ac120026b",
             "loop_aware": "0"
         }
     ]
