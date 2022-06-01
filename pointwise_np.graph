@@ -5,15 +5,15 @@
         "repoBranch": "main",
         "repo": "pritchardn/lowpass_graphs",
         "filePath": "pointwise_np.graph",
-        "eagleVersion": "v4.2.0",
-        "eagleCommitHash": "b34ff925a5c6883fdba168c073afeffb9a9fc446",
+        "eagleVersion": "Unknown",
+        "eagleCommitHash": "Unknown",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
         "gitUrl": "",
         "lastModifiedName": "",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": "",
+        "lastModifiedDatetime": 0,
         "numLGNodes": 8
     },
     "nodeDataArray": [
@@ -35,7 +35,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "f49a804",
             "inputPorts": [
@@ -113,7 +112,20 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [],
+            "applicationArgs": [
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (complex)",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -143,7 +155,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "f49a804",
             "inputPorts": [
@@ -152,7 +163,7 @@
                     "IdText": "window",
                     "text": "window",
                     "event": false,
-                    "type": "window",
+                    "type": "Unknown",
                     "description": ""
                 }
             ],
@@ -162,7 +173,7 @@
                     "IdText": "window",
                     "text": "window",
                     "event": false,
-                    "type": "window",
+                    "type": "Unknown",
                     "description": ""
                 }
             ],
@@ -194,7 +205,32 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [],
+            "applicationArgs": [
+                {
+                    "text": "window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -224,7 +260,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "f49a804",
             "inputPorts": [
@@ -233,7 +268,7 @@
                     "IdText": "signal",
                     "text": "signal",
                     "event": false,
-                    "type": "signal",
+                    "type": "Unknown",
                     "description": ""
                 }
             ],
@@ -243,7 +278,7 @@
                     "IdText": "signal",
                     "text": "signal",
                     "event": false,
-                    "type": "signal",
+                    "type": "Unknown",
                     "description": ""
                 }
             ],
@@ -275,7 +310,32 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [],
+            "applicationArgs": [
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -288,246 +348,99 @@
             "outputApplicationDescription": ""
         },
         {
-            "category": "PythonApp",
+            "category": "Memory",
             "isGroup": false,
-            "color": "#0059a5",
+            "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -1,
-            "text": "LP_SignalGenerator",
-            "description": "Generates a noisy sine signal for filtering. Effectively an input generator.",
-            "x": 188.70310317222834,
-            "y": 92.5041401684837,
+            "key": -8,
+            "text": "signal",
+            "description": "In-memory storage of intermediate data products",
+            "x": 805.4480127348425,
+            "y": 115.29919095983331,
             "width": 200,
             "height": 72,
-            "collapsed": false,
+            "collapsed": true,
             "flipPorts": false,
             "streaming": false,
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
-            "git_url": "dlg_lowpass_components",
-            "sha": "d6ecc621",
-            "inputPorts": [],
-            "outputPorts": [
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "b8c2322",
+            "inputPorts": [
                 {
-                    "Id": "d5614210-69ce-45e8-bda7-6f3950d65bb8",
+                    "Id": "7658ea94-d75c-45f7-96f5-9faf5211cdf0",
                     "IdText": "signal",
-                    "text": "Signal",
+                    "text": "signal",
                     "event": false,
-                    "type": "float",
-                    "description": " Numpy array containing final signal (purely real (floats))"
+                    "type": "Unknown",
+                    "description": ""
                 }
             ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "appclass",
-                    "name": "appclass",
-                    "value": "dlg_lowpass_components.LPSignalGenerator",
-                    "defaultValue": "",
-                    "description": "Import direction for application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal length",
-                    "name": "length",
-                    "value": 256,
-                    "defaultValue": "",
-                    "description": "Length of the output signal",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Sample rate",
-                    "name": "samplerate",
-                    "value": 5000,
-                    "defaultValue": "",
-                    "description": "The sample rate of the signal",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal frequencies",
-                    "name": "frequencies",
-                    "value": "{}",
-                    "defaultValue": "",
-                    "description": "A dictionary containing a single list of values - the frequencies incorporated in the original signal.",
-                    "readonly": false,
-                    "type": "Json",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Noise parameters",
-                    "name": "noise_params",
-                    "value": "{} ",
-                    "defaultValue": "",
-                    "description": "A dictionary containing several values defining the properties of an interleaved noise. mean, std-deviation, frequency, random seed, alpha",
-                    "readonly": false,
-                    "type": "Json",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "isGroup": false,
-            "color": "#0059a5",
-            "drawOrderHint": 0,
-            "key": -2,
-            "text": "LP_WindowGenerator",
-            "description": "Generates a Hann window for low-pass filtering.",
-            "x": 513.019810296271,
-            "y": 216.82459927108988,
-            "width": 200,
-            "height": 72,
-            "collapsed": false,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": false,
-            "readonly": false,
-            "git_url": "dlg_lowpass_components",
-            "sha": "d6ecc621",
-            "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "aa52ac52-7447-42ff-91d2-d90920b76975",
-                    "IdText": "window",
-                    "text": "Window",
+                    "Id": "332f24ea-7c35-4659-a913-3618d90269fa",
+                    "IdText": "signal",
+                    "text": "signal",
                     "event": false,
-                    "type": "float",
-                    "description": " Numpy array containing final signal (purely real (floats))"
+                    "type": "Unknown",
+                    "description": ""
                 }
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "fields": [
                 {
-                    "text": "appclass",
-                    "name": "appclass",
-                    "value": "dlg_lowpass_components.LPWindowGenerator",
-                    "defaultValue": "",
-                    "description": "Import direction for application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
+                    "text": "Data volume",
+                    "name": "data_volume",
                     "value": 5,
                     "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "readonly": true,
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
                     "type": "Float",
                     "precious": false,
                     "options": [],
                     "positional": false
                 },
                 {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
                     "defaultValue": "",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal length",
-                    "name": "length",
-                    "value": 256,
-                    "defaultValue": "",
-                    "description": "Length of the output signal",
+                    "description": "Is this node the end of a group?",
                     "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Sample rate",
-                    "name": "samplerate",
-                    "value": 5000,
-                    "defaultValue": "",
-                    "description": "The sample rate of the signal",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Filter cutoff",
-                    "name": "cutoff",
-                    "value": 600,
-                    "defaultValue": "",
-                    "description": "The frequency of the low-pass filter",
-                    "readonly": false,
-                    "type": "Integer",
+                    "type": "Boolean",
                     "precious": false,
                     "options": [],
                     "positional": false
                 }
             ],
-            "applicationArgs": [],
+            "applicationArgs": [
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -547,8 +460,8 @@
             "key": -3,
             "text": "LPFilterPointwiseNP",
             "description": "Implements a lowpass filter via pointwise convolution with numpy",
-            "x": 951.3861203215496,
-            "y": 204.93401219987982,
+            "x": 969.3515515861142,
+            "y": 118.1643697197868,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -557,30 +470,29 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
                 {
-                    "Id": "90962568-77c3-4ccf-ae86-a88de2b7841d",
+                    "Id": "b84c2f8e-6dca-4f5c-9a08-a5d6772d76d0",
                     "IdText": "signal",
                     "text": "Signal",
                     "event": false,
-                    "type": "float",
+                    "type": "Unknown",
                     "description": " Numpy array containing incoming signal (string dump of floats)"
                 },
                 {
-                    "Id": "1f0cf8ef-0a1b-41fa-8960-0b06b78fb21b",
+                    "Id": "481aa80f-73c3-40b4-a2e9-9b6bc9c369d8",
                     "IdText": "window",
-                    "text": "Signal",
+                    "text": "Window",
                     "event": false,
-                    "type": "float",
+                    "type": "Unknown",
                     "description": " Numpy array containing the filter window (string dump of floats)"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "7eb8fd4c-e660-4692-840d-5af40d7e3a8a",
+                    "Id": "77744896-7893-4a4a-baa5-b9b08dba5d80",
                     "IdText": "signal",
                     "text": "Signal",
                     "event": false,
@@ -595,7 +507,7 @@
                     "text": "appclass",
                     "name": "appclass",
                     "value": "dlg_lowpass_components.LPFilterPointwiseNP",
-                    "defaultValue": "",
+                    "defaultValue": "dlg_lowpass_components.LPFilterPointwiseNP",
                     "description": "Import direction for application class",
                     "readonly": true,
                     "type": "String",
@@ -607,7 +519,7 @@
                     "text": "Execution Time",
                     "name": "execution_time",
                     "value": 5,
-                    "defaultValue": "",
+                    "defaultValue": "5",
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
@@ -619,28 +531,197 @@
                     "text": "No. of CPUs",
                     "name": "num_cpus",
                     "value": 1,
-                    "defaultValue": "",
+                    "defaultValue": "1",
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
                     "precious": false,
                     "options": [],
                     "positional": false
-                },
+                }
+            ],
+            "applicationArgs": [
                 {
                     "text": "Double Precision",
                     "name": "doubleprecision",
                     "value": false,
-                    "defaultValue": "",
+                    "defaultValue": "false",
                     "description": "Whether to use double (true) or float (false) precision.",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing incoming signal (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing the filter window (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (complex)",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
-            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "LP_WindowGenerator",
+            "description": "Generates a Hann window for low-pass filtering.",
+            "x": 517.3515515861142,
+            "y": 230.1643697197868,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "dlg_lowpass_components",
+            "sha": "d6ecc621",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "101467ab-0ec9-4a41-a913-e16069abd75b",
+                    "IdText": "window",
+                    "text": "Window",
+                    "event": false,
+                    "type": "Unknown",
+                    "description": " Numpy array containing final signal (purely real (floats))"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg_lowpass_components.LPWindowGenerator",
+                    "defaultValue": "dlg_lowpass_components.LPWindowGenerator",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Signal length",
+                    "name": "length",
+                    "value": 256,
+                    "defaultValue": "256",
+                    "description": "Length of the output signal",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Sample rate",
+                    "name": "samplerate",
+                    "value": 5000,
+                    "defaultValue": "5000",
+                    "description": "The sample rate of the signal",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Filter cutoff",
+                    "name": "cutoff",
+                    "value": 600,
+                    "defaultValue": "600",
+                    "description": "The frequency of the low-pass filter",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (purely real (floats))",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -660,8 +741,8 @@
             "key": -7,
             "text": "LPAddNoise",
             "description": "Component to add additional noise to a signal array.",
-            "x": 617.5099051481354,
-            "y": 100.6643697197868,
+            "x": 587.3515515861142,
+            "y": 92.1643697197868,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -670,26 +751,25 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
                 {
-                    "Id": "8d5e2364-d582-4667-9769-246b6cf47e26",
+                    "Id": "224c4e70-7736-40ad-8cfb-05e1cb5d3e0b",
                     "IdText": "signal",
                     "text": "Signal",
                     "event": false,
-                    "type": "float",
+                    "type": "Unknown",
                     "description": " Numpy array containing incoming signal (string dump of floats)"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "2ee55084-7fb0-441e-b9b9-78861c814be8",
+                    "Id": "d745f42a-b3a6-491c-ad3c-e279edf89ec7",
                     "IdText": "signal",
                     "text": "Signal",
                     "event": false,
-                    "type": "float",
+                    "type": "Unknown",
                     "description": " Numpy array containing final signal (purely real (floats))"
                 }
             ],
@@ -731,7 +811,9 @@
                     "precious": false,
                     "options": [],
                     "positional": false
-                },
+                }
+            ],
+            "applicationArgs": [
                 {
                     "text": "Average noise",
                     "name": "noise",
@@ -803,9 +885,32 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing incoming signal (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (purely real (floats))",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
-            "applicationArgs": [],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -818,75 +923,138 @@
             "outputApplicationDescription": ""
         },
         {
-            "category": "Memory",
+            "category": "PythonApp",
             "isGroup": false,
-            "color": "#2c2c2c",
+            "color": "#0059a5",
             "drawOrderHint": 0,
-            "key": -8,
-            "text": "signal",
-            "description": "In-memory storage of intermediate data products",
-            "x": 799.4480127348425,
-            "y": 145.2991909598333,
+            "key": -1,
+            "text": "LP_SignalGenerator",
+            "description": "Generates a noisy sine signal for filtering. Effectively an input generator.",
+            "x": 215.35155158611417,
+            "y": 98.1643697197868,
             "width": 200,
             "height": 72,
-            "collapsed": true,
+            "collapsed": false,
             "flipPorts": false,
             "streaming": false,
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "b8c2322",
-            "inputPorts": [
-                {
-                    "Id": "7658ea94-d75c-45f7-96f5-9faf5211cdf0",
-                    "IdText": "signal",
-                    "text": "signal",
-                    "event": false,
-                    "type": "signal",
-                    "description": ""
-                }
-            ],
+            "git_url": "dlg_lowpass_components",
+            "sha": "d6ecc621",
+            "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "332f24ea-7c35-4659-a913-3618d90269fa",
+                    "Id": "bb381cdc-a297-46c5-bac8-196bbeb21819",
                     "IdText": "signal",
-                    "text": "signal",
+                    "text": "Signal",
                     "event": false,
-                    "type": "signal",
-                    "description": ""
+                    "type": "Unknown",
+                    "description": " Numpy array containing final signal (purely real (floats))"
                 }
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "fields": [
                 {
-                    "text": "Data volume",
-                    "name": "data_volume",
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg_lowpass_components.LPSignalGenerator",
+                    "defaultValue": "dlg_lowpass_components.LPSignalGenerator",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
                     "value": 5,
                     "defaultValue": "5",
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
+                    "description": "Estimated execution time",
+                    "readonly": true,
                     "type": "Float",
                     "precious": false,
                     "options": [],
                     "positional": false
                 },
                 {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Is this node the end of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
                     "precious": false,
                     "options": [],
                     "positional": false
                 }
             ],
-            "applicationArgs": [],
+            "applicationArgs": [
+                {
+                    "text": "Signal length",
+                    "name": "length",
+                    "value": 256,
+                    "defaultValue": "256",
+                    "description": "Length of the output signal",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Sample rate",
+                    "name": "samplerate",
+                    "value": 5000,
+                    "defaultValue": "5000",
+                    "description": "The sample rate of the signal",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal frequencies",
+                    "name": "frequencies",
+                    "value": "{}",
+                    "defaultValue": "{}",
+                    "description": "A dictionary containing a single list of values - the frequencies incorporated in the original signal.",
+                    "readonly": false,
+                    "type": "Json",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Noise parameters",
+                    "name": "noise_params",
+                    "value": "{}",
+                    "defaultValue": "{}",
+                    "description": "A dictionary containing several values defining the properties of an interleaved noise. mean, std-deviation, frequency, random seed, alpha",
+                    "readonly": false,
+                    "type": "Json",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (purely real (floats))",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -901,53 +1069,60 @@
     ],
     "linkDataArray": [
         {
-            "from": -1,
-            "fromPort": "d5614210-69ce-45e8-bda7-6f3950d65bb8",
-            "to": -6,
-            "toPort": "8943e2d1-28e6-4d9a-b315-b500daea299b",
-            "loop_aware": "0"
-        },
-        {
-            "from": -2,
-            "fromPort": "aa52ac52-7447-42ff-91d2-d90920b76975",
-            "to": -5,
-            "toPort": "158b2d13-a95c-4208-b73b-d5a85c2fab1c",
-            "loop_aware": "0"
-        },
-        {
-            "from": -5,
-            "fromPort": "45822df7-fb73-4d24-871d-fa10b072d325",
-            "to": -3,
-            "toPort": "1f0cf8ef-0a1b-41fa-8960-0b06b78fb21b",
-            "loop_aware": "0"
-        },
-        {
             "from": -3,
-            "fromPort": "7eb8fd4c-e660-4692-840d-5af40d7e3a8a",
+            "fromPort": "77744896-7893-4a4a-baa5-b9b08dba5d80",
             "to": -4,
             "toPort": "0a8d103b-1709-4aeb-bc13-8106629836ec",
-            "loop_aware": "0"
-        },
-        {
-            "from": -6,
-            "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
-            "to": -7,
-            "toPort": "8d5e2364-d582-4667-9769-246b6cf47e26",
-            "loop_aware": "0"
-        },
-        {
-            "from": -7,
-            "fromPort": "2ee55084-7fb0-441e-b9b9-78861c814be8",
-            "to": -8,
-            "toPort": "7658ea94-d75c-45f7-96f5-9faf5211cdf0",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -8,
             "fromPort": "332f24ea-7c35-4659-a913-3618d90269fa",
             "to": -3,
-            "toPort": "90962568-77c3-4ccf-ae86-a88de2b7841d",
-            "loop_aware": "0"
+            "toPort": "b84c2f8e-6dca-4f5c-9a08-a5d6772d76d0",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -5,
+            "fromPort": "45822df7-fb73-4d24-871d-fa10b072d325",
+            "to": -3,
+            "toPort": "481aa80f-73c3-40b4-a2e9-9b6bc9c369d8",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -2,
+            "fromPort": "101467ab-0ec9-4a41-a913-e16069abd75b",
+            "to": -5,
+            "toPort": "158b2d13-a95c-4208-b73b-d5a85c2fab1c",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -7,
+            "fromPort": "d745f42a-b3a6-491c-ad3c-e279edf89ec7",
+            "to": -8,
+            "toPort": "7658ea94-d75c-45f7-96f5-9faf5211cdf0",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -6,
+            "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
+            "to": -7,
+            "toPort": "224c4e70-7736-40ad-8cfb-05e1cb5d3e0b",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -1,
+            "fromPort": "bb381cdc-a297-46c5-bac8-196bbeb21819",
+            "to": -6,
+            "toPort": "8943e2d1-28e6-4d9a-b315-b500daea299b",
+            "loop_aware": "0",
+            "closesLoop": false
         }
     ]
 }
