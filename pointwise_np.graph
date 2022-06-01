@@ -136,6 +136,18 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (complex)",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "inputAppFields": [],
@@ -218,6 +230,30 @@
                 }
             ],
             "applicationArgs": [
+                {
+                    "text": "window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
                 {
                     "text": "window",
                     "name": "window",
@@ -394,6 +430,30 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "inputAppFields": [],
@@ -476,6 +536,30 @@
                 }
             ],
             "applicationArgs": [
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
                 {
                     "text": "signal",
                     "name": "signal",
@@ -672,42 +756,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing incoming signal (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing the filter window (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
                 }
             ],
             "inputAppFields": [],
@@ -825,18 +873,6 @@
                     "description": "The frequency of the low-pass filter",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (purely real (floats))",
-                    "readonly": false,
-                    "type": "Unknown",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -1041,30 +1077,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing incoming signal (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (purely real (floats))",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
                 }
             ],
             "inputAppFields": [],
@@ -1086,7 +1098,7 @@
             "key": -1,
             "text": "LP_SignalGenerator",
             "description": "Generates a noisy sine signal for filtering. Effectively an input generator.",
-            "x": 193.67577579305714,
+            "x": 195.67577579305714,
             "y": 97.6643697197868,
             "width": 200,
             "height": 72,
@@ -1116,7 +1128,7 @@
                     "text": "appclass",
                     "name": "appclass",
                     "value": "dlg_lowpass_components.LPSignalGenerator",
-                    "defaultValue": "dlg_lowpass_components.LPSignalGenerator",
+                    "defaultValue": "",
                     "description": "Import direction for application class",
                     "readonly": true,
                     "type": "String",
@@ -1128,7 +1140,7 @@
                     "text": "Execution Time",
                     "name": "execution_time",
                     "value": 5,
-                    "defaultValue": "5",
+                    "defaultValue": "",
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
@@ -1140,7 +1152,7 @@
                     "text": "No. of CPUs",
                     "name": "num_cpus",
                     "value": 1,
-                    "defaultValue": "1",
+                    "defaultValue": "",
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
@@ -1154,7 +1166,7 @@
                     "text": "Signal length",
                     "name": "length",
                     "value": 256,
-                    "defaultValue": "256",
+                    "defaultValue": "",
                     "description": "Length of the output signal",
                     "readonly": false,
                     "type": "Integer",
@@ -1166,7 +1178,7 @@
                     "text": "Sample rate",
                     "name": "samplerate",
                     "value": 5000,
-                    "defaultValue": "5000",
+                    "defaultValue": "",
                     "description": "The sample rate of the signal",
                     "readonly": false,
                     "type": "Integer",
@@ -1178,7 +1190,7 @@
                     "text": "Signal frequencies",
                     "name": "frequencies",
                     "value": "{\"values\": [440, 800, 1000, 2000]}",
-                    "defaultValue": "{\"values\": [440, 800, 1000, 2000]}",
+                    "defaultValue": "",
                     "description": "A dictionary containing a single list of values - the frequencies incorporated in the original signal.",
                     "readonly": false,
                     "type": "Json",
@@ -1190,7 +1202,7 @@
                     "text": "Noise parameters",
                     "name": "noise_params",
                     "value": "{}",
-                    "defaultValue": "{}",
+                    "defaultValue": "",
                     "description": "A dictionary containing several values defining the properties of an interleaved noise. noise, stddiv-deviation, frequency, random randomseed, noisemultiplier",
                     "readonly": false,
                     "type": "Json",
