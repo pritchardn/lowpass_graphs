@@ -14,154 +14,9 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": "",
-        "numLGNodes": 12
+        "numLGNodes": 11
     },
     "nodeDataArray": [
-        {
-            "category": "File",
-            "isGroup": false,
-            "color": "#2c2c2c",
-            "drawOrderHint": 0,
-            "key": -4,
-            "text": "File",
-            "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 1208,
-            "y": 147,
-            "width": 200,
-            "height": 72,
-            "collapsed": false,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": false,
-            "readonly": true,
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f49a804",
-            "inputPorts": [
-                {
-                    "Id": "0a8d103b-1709-4aeb-bc13-8106629836ec",
-                    "IdText": "signal",
-                    "text": "Signal",
-                    "event": false,
-                    "type": "Complex",
-                    "description": " Numpy array containing final signal (complex)"
-                }
-            ],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": 5,
-                    "defaultValue": "",
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": false,
-                    "defaultValue": "",
-                    "description": "Is this node the end of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Check file path exists",
-                    "name": "check_filepath_exists",
-                    "value": true,
-                    "defaultValue": "",
-                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "File Path",
-                    "name": "filepath",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Path to the file for this node",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Directory name",
-                    "name": "dirname",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Path to the file for this node",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
         {
             "category": "Memory",
             "isGroup": false,
@@ -1373,87 +1228,6 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -10,
-            "text": "signal",
-            "description": "In-memory storage of intermediate data products",
-            "x": 1146.9223568037592,
-            "y": 277.75323459398624,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": false,
-            "readonly": true,
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "1759e0d",
-            "inputPorts": [
-                {
-                    "Id": "175ebefa-f746-4acb-a98b-7da0d0e14b4e",
-                    "IdText": "signal",
-                    "text": "signal",
-                    "event": false,
-                    "type": "signal",
-                    "description": ""
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "086f0ea5-6f85-4ed6-a587-9f852717010d",
-                    "IdText": "signal",
-                    "text": "signal",
-                    "event": false,
-                    "type": "signal",
-                    "description": ""
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": 5,
-                    "defaultValue": "5",
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Is this node the end of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "Memory",
-            "isGroup": false,
-            "color": "#2c2c2c",
-            "drawOrderHint": 0,
             "key": -11,
             "text": "signal",
             "description": "In-memory storage of intermediate data products",
@@ -1637,6 +1411,123 @@
             "outputApplicationType": "None",
             "outputApplicationKey": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "File",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 1171.615952564932,
+            "y": 210.77529874143988,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": false,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "1759e0d",
+            "inputPorts": [
+                {
+                    "Id": "c3f68150-d5b2-424b-9246-e8cefadcc870",
+                    "IdText": "signal",
+                    "text": "Signal A",
+                    "event": false,
+                    "type": "Complex",
+                    "description": " Numpy array containing incoming signal (string dump of floats)"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "723bda52-80fb-402d-9a12-71db2adf0e7a",
+                    "IdText": "signal",
+                    "text": "Signal A",
+                    "event": false,
+                    "type": "Complex",
+                    "description": " Numpy array containing incoming signal (string dump of floats)"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -1676,31 +1567,10 @@
             "loop_aware": "0"
         },
         {
-            "from": -3,
-            "fromPort": "46b86bfa-0a17-4a62-a025-7a132e62dead",
-            "to": -4,
-            "toPort": "0a8d103b-1709-4aeb-bc13-8106629836ec",
-            "loop_aware": "0"
-        },
-        {
             "from": -1,
             "fromPort": "0b4561b2-7351-4aa4-9a99-0a6579ee8237",
             "to": -6,
             "toPort": "8943e2d1-28e6-4d9a-b315-b500daea299b",
-            "loop_aware": "0"
-        },
-        {
-            "from": -3,
-            "fromPort": "46b86bfa-0a17-4a62-a025-7a132e62dead",
-            "to": -10,
-            "toPort": "175ebefa-f746-4acb-a98b-7da0d0e14b4e",
-            "loop_aware": "0"
-        },
-        {
-            "from": -10,
-            "fromPort": "086f0ea5-6f85-4ed6-a587-9f852717010d",
-            "to": -9,
-            "toPort": "a2f2e174-d932-4069-9708-3eddfc9efb65",
             "loop_aware": "0"
         },
         {
@@ -1722,6 +1592,20 @@
             "fromPort": "85406570-33e3-4e3e-9dc6-4212715dc5a3",
             "to": -12,
             "toPort": "04666099-0975-43e0-a36b-9e263c5ea92c",
+            "loop_aware": "0"
+        },
+        {
+            "from": -3,
+            "fromPort": "46b86bfa-0a17-4a62-a025-7a132e62dead",
+            "to": -4,
+            "toPort": "c3f68150-d5b2-424b-9246-e8cefadcc870",
+            "loop_aware": "0"
+        },
+        {
+            "from": -4,
+            "fromPort": "723bda52-80fb-402d-9a12-71db2adf0e7a",
+            "to": -9,
+            "toPort": "a2f2e174-d932-4069-9708-3eddfc9efb65",
             "loop_aware": "0"
         }
     ]
