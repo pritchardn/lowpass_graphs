@@ -810,7 +810,7 @@
             "key": -3,
             "text": "LPFilterFFTFFTW",
             "description": "Implements a lowpass filter via fft with FFTW",
-            "x": 1039.297783682974,
+            "x": 1036.75,
             "y": 148,
             "width": 200,
             "height": 72,
@@ -960,7 +960,7 @@
             "key": -1,
             "text": "LP_SignalGenerator",
             "description": "Generates a noisy sine signal for filtering. Effectively an input generator.",
-            "x": 214.14889184148709,
+            "x": 212.875,
             "y": 82.5,
             "width": 200,
             "height": 72,
@@ -1105,8 +1105,8 @@
             "key": -4,
             "text": "LPCorrelate",
             "description": "Component to compute correlation between two numpy series",
-            "x": 1559.0292100214517,
-            "y": 148.97610815851283,
+            "x": 1381.3844525959375,
+            "y": 175.8527088036117,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -1120,7 +1120,7 @@
             "sha": "d6ecc621",
             "inputPorts": [
                 {
-                    "Id": "c8eea251-a283-4942-a595-ecc0f32977e1",
+                    "Id": "e038cc29-a61e-4956-be15-473a66f868c7",
                     "IdText": "signal",
                     "text": "Signal A",
                     "event": false,
@@ -1128,7 +1128,7 @@
                     "description": " Numpy array containing incoming signal (string dump of floats)"
                 },
                 {
-                    "Id": "bce2d20f-4fcc-4b4e-9aec-25c7ffc1863c",
+                    "Id": "6212e845-bcb6-4199-a93b-eb0eeb422d7d",
                     "IdText": "signal",
                     "text": "Signal B",
                     "event": false,
@@ -1138,7 +1138,7 @@
             ],
             "outputPorts": [
                 {
-                    "Id": "9e4fb7a1-2f3c-403b-bd0b-56d6ed293ba8",
+                    "Id": "a5dd9e1e-7259-4fd2-8cac-0e2524a287eb",
                     "IdText": "correlation",
                     "text": "Correlation",
                     "event": false,
@@ -1224,18 +1224,99 @@
             "outputApplicationDescription": ""
         },
         {
-            "category": "File",
+            "category": "Memory",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -9,
-            "text": "File",
-            "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 1346.289272493108,
-            "y": 165.53670209784505,
+            "text": "signal",
+            "description": "In-memory storage of intermediate data products",
+            "x": 785.6646997245849,
+            "y": -46.620719723412634,
             "width": 200,
             "height": 72,
             "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": true,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "1759e0d",
+            "inputPorts": [
+                {
+                    "Id": "2d35bc69-bef6-45e9-a742-9ef46324ba49",
+                    "IdText": "signal",
+                    "text": "signal",
+                    "event": false,
+                    "type": "signal",
+                    "description": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "0dcb0337-7f93-4c36-9385-90eb2e826ba2",
+                    "IdText": "signal",
+                    "text": "signal",
+                    "event": false,
+                    "type": "signal",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -10,
+            "text": "File",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 1146.2647831963475,
+            "y": 334.84714953961543,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
             "flipPorts": false,
             "streaming": false,
             "precious": false,
@@ -1246,7 +1327,7 @@
             "sha": "1759e0d",
             "inputPorts": [
                 {
-                    "Id": "5a3c23d8-0ac6-451e-9478-19f27fbbe570",
+                    "Id": "a003813b-6859-47a8-b6ba-0bb2d523e24e",
                     "IdText": "signal",
                     "text": "Signal A",
                     "event": false,
@@ -1256,7 +1337,7 @@
             ],
             "outputPorts": [
                 {
-                    "Id": "b59ced48-9e6f-45a1-b975-b6e4a604ae4d",
+                    "Id": "b1f62b9a-adee-4003-befb-a03a31fe3f4c",
                     "IdText": "signal",
                     "text": "Signal A",
                     "event": false,
@@ -1345,11 +1426,11 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -11,
             "text": "File",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 1827.820388575228,
-            "y": 151.52389184148723,
+            "x": 1635.4392503273896,
+            "y": 197.2668306590097,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -1363,7 +1444,7 @@
             "sha": "1759e0d",
             "inputPorts": [
                 {
-                    "Id": "3cd5367b-1340-46af-a04b-a5c85a6c7aeb",
+                    "Id": "f945276a-d0c7-4ec2-a087-eed97fae7e66",
                     "IdText": "correlation",
                     "text": "Correlation",
                     "event": false,
@@ -1447,87 +1528,6 @@
             "outputApplicationType": "None",
             "outputApplicationKey": null,
             "outputApplicationDescription": ""
-        },
-        {
-            "category": "Memory",
-            "isGroup": false,
-            "color": "#2c2c2c",
-            "drawOrderHint": 0,
-            "key": -11,
-            "text": "signal",
-            "description": "In-memory storage of intermediate data products",
-            "x": 843.2767283209084,
-            "y": -66.42847925339748,
-            "width": 200,
-            "height": 72,
-            "collapsed": true,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": false,
-            "readonly": true,
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "1759e0d",
-            "inputPorts": [
-                {
-                    "Id": "94187c28-4175-46bc-9269-9a97a30a9632",
-                    "IdText": "signal",
-                    "text": "signal",
-                    "event": false,
-                    "type": "signal",
-                    "description": ""
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "1f35a7af-3eb6-46b1-a181-fb4b4f9969de",
-                    "IdText": "signal",
-                    "text": "signal",
-                    "event": false,
-                    "type": "signal",
-                    "description": ""
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": 5,
-                    "defaultValue": "5",
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": false,
-                    "defaultValue": "False",
-                    "description": "Is this node the end of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -1574,38 +1574,38 @@
             "loop_aware": "0"
         },
         {
-            "from": -3,
-            "fromPort": "8754fbd6-9ffb-4225-974d-e5acee48d38b",
+            "from": -1,
+            "fromPort": "b9b01e1d-678a-4bdf-8716-355cc2d7e809",
             "to": -9,
-            "toPort": "5a3c23d8-0ac6-451e-9478-19f27fbbe570",
-            "loop_aware": "0"
-        },
-        {
-            "from": -4,
-            "fromPort": "9e4fb7a1-2f3c-403b-bd0b-56d6ed293ba8",
-            "to": -10,
-            "toPort": "3cd5367b-1340-46af-a04b-a5c85a6c7aeb",
+            "toPort": "2d35bc69-bef6-45e9-a742-9ef46324ba49",
             "loop_aware": "0"
         },
         {
             "from": -9,
-            "fromPort": "b59ced48-9e6f-45a1-b975-b6e4a604ae4d",
+            "fromPort": "0dcb0337-7f93-4c36-9385-90eb2e826ba2",
             "to": -4,
-            "toPort": "bce2d20f-4fcc-4b4e-9aec-25c7ffc1863c",
+            "toPort": "e038cc29-a61e-4956-be15-473a66f868c7",
             "loop_aware": "0"
         },
         {
-            "from": -1,
-            "fromPort": "b9b01e1d-678a-4bdf-8716-355cc2d7e809",
+            "from": -10,
+            "fromPort": "b1f62b9a-adee-4003-befb-a03a31fe3f4c",
+            "to": -4,
+            "toPort": "6212e845-bcb6-4199-a93b-eb0eeb422d7d",
+            "loop_aware": "0"
+        },
+        {
+            "from": -3,
+            "fromPort": "8754fbd6-9ffb-4225-974d-e5acee48d38b",
+            "to": -10,
+            "toPort": "a003813b-6859-47a8-b6ba-0bb2d523e24e",
+            "loop_aware": "0"
+        },
+        {
+            "from": -4,
+            "fromPort": "a5dd9e1e-7259-4fd2-8cac-0e2524a287eb",
             "to": -11,
-            "toPort": "94187c28-4175-46bc-9269-9a97a30a9632",
-            "loop_aware": "0"
-        },
-        {
-            "from": -11,
-            "fromPort": "1f35a7af-3eb6-46b1-a181-fb4b4f9969de",
-            "to": -4,
-            "toPort": "c8eea251-a283-4942-a595-ecc0f32977e1",
+            "toPort": "f945276a-d0c7-4ec2-a087-eed97fae7e66",
             "loop_aware": "0"
         }
     ]
