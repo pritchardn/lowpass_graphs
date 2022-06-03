@@ -1190,7 +1190,7 @@
                 {
                     "text": "Normalize Signal",
                     "name": "normalize",
-                    "value": false,
+                    "value": true,
                     "defaultValue": "false",
                     "description": "Whether to normalize the input signals (True) or not (False).",
                     "readonly": false,
