@@ -14,7 +14,7 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 0,
-        "numLGNodes": 11
+        "numLGNodes": 12
     },
     "nodeDataArray": [
         {
@@ -29,7 +29,7 @@
             "y": 206.5,
             "width": 200,
             "height": 72,
-            "collapsed": true,
+            "collapsed": false,
             "flipPorts": false,
             "streaming": false,
             "precious": false,
@@ -178,11 +178,11 @@
             "key": -6,
             "text": "signal",
             "description": "In-memory storage of intermediate data products",
-            "x": 371.5,
+            "x": 375.3216755244613,
             "y": 94.5,
             "width": 200,
             "height": 72,
-            "collapsed": true,
+            "collapsed": false,
             "flipPorts": false,
             "streaming": false,
             "precious": false,
@@ -1439,15 +1439,164 @@
             "outputApplicationDescription": ""
         },
         {
-            "category": "Memory",
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -12,
+            "text": "LPFilterFFTCuda",
+            "description": "Implements a lowpass filter via fft with cuda",
+            "x": 949.0305742742308,
+            "y": -208.9636074578724,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "dlg_lowpass_components",
+            "sha": "d6ecc621",
+            "inputPorts": [
+                {
+                    "Id": "53e6778c-3b0d-4770-917a-1498f212b1e9",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "Unknown",
+                    "description": " Numpy array containing incoming signal (string dump of floats)"
+                },
+                {
+                    "Id": "9c2f826d-92e4-4e12-a5b3-083abdf03eee",
+                    "IdText": "window",
+                    "text": "Window",
+                    "event": false,
+                    "type": "Unknown",
+                    "description": " Numpy array containing the filter window (string dump of floats)"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "aeb293c9-cab6-40f5-9cd1-92b6f224306a",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "Complex",
+                    "description": " Numpy array containing final signal (complex)"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg_lowpass_components.LPFilterFFTCuda",
+                    "defaultValue": "",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Double Precision",
+                    "name": "doubleprecision",
+                    "value": true,
+                    "defaultValue": "",
+                    "description": "Whether to use double (true) or float (false) precision.",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing incoming signal (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing the filter window (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (complex)",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -11,
-            "text": "signal",
-            "description": "In-memory storage of intermediate data products",
-            "x": 706.1091470333484,
-            "y": -25.115825852249575,
+            "text": "Signal",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 1098.6715371371154,
+            "y": -45.8568037289362,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1457,24 +1606,24 @@
             "subject": null,
             "expanded": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "1759e0d",
+            "sha": "19a6f70",
             "inputPorts": [
                 {
-                    "Id": "18cbe819-bc11-4caa-90da-b81fe5994cdb",
+                    "Id": "b44639b5-d9a5-4286-9075-e6969c0b27a5",
                     "IdText": "signal",
-                    "text": "signal",
+                    "text": "Signal",
                     "event": false,
-                    "type": "signal",
+                    "type": "Complex",
                     "description": ""
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "97f61e7f-c020-4b12-84cd-b090add4bee2",
+                    "Id": "35cb19a1-7cf2-4554-beb5-6b0844be8c98",
                     "IdText": "signal",
-                    "text": "signal",
+                    "text": "Signal A",
                     "event": false,
-                    "type": "signal",
+                    "type": "Complex",
                     "description": ""
                 }
             ],
@@ -1485,7 +1634,7 @@
                     "text": "Data volume",
                     "name": "data_volume",
                     "value": 5,
-                    "defaultValue": "",
+                    "defaultValue": "5",
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
@@ -1497,10 +1646,46 @@
                     "text": "Group end",
                     "name": "group_end",
                     "value": false,
-                    "defaultValue": "",
+                    "defaultValue": "False",
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -1593,16 +1778,32 @@
             "closesLoop": false
         },
         {
-            "from": -1,
-            "fromPort": "519622dc-698a-469b-ad0e-63c124377c8e",
+            "from": -6,
+            "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
+            "to": -12,
+            "toPort": "53e6778c-3b0d-4770-917a-1498f212b1e9",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -5,
+            "fromPort": "45822df7-fb73-4d24-871d-fa10b072d325",
+            "to": -12,
+            "toPort": "9c2f826d-92e4-4e12-a5b3-083abdf03eee",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -12,
+            "fromPort": "aeb293c9-cab6-40f5-9cd1-92b6f224306a",
             "to": -11,
-            "toPort": "18cbe819-bc11-4caa-90da-b81fe5994cdb",
+            "toPort": "b44639b5-d9a5-4286-9075-e6969c0b27a5",
             "loop_aware": "0",
             "closesLoop": false
         },
         {
             "from": -11,
-            "fromPort": "97f61e7f-c020-4b12-84cd-b090add4bee2",
+            "fromPort": "35cb19a1-7cf2-4554-beb5-6b0844be8c98",
             "to": -10,
             "toPort": "db100a5c-9f58-4021-a9b8-f42585f35d59",
             "loop_aware": "0",
