@@ -5,15 +5,15 @@
         "repoBranch": "main",
         "repo": "pritchardn/lowpass_graphs",
         "filePath": "fft_cuda_ncc.graph",
-        "eagleVersion": "v4.2.0",
-        "eagleCommitHash": "b34ff925a5c6883fdba168c073afeffb9a9fc446",
+        "eagleVersion": "Unknown",
+        "eagleCommitHash": "Unknown",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
         "gitUrl": "",
         "lastModifiedName": "",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": "",
+        "lastModifiedDatetime": 0,
         "numLGNodes": 11
     },
     "nodeDataArray": [
@@ -35,7 +35,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "f49a804",
             "inputPorts": [
@@ -189,7 +188,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "f49a804",
             "inputPorts": [
@@ -343,7 +341,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "b8c2322",
             "inputPorts": [
@@ -497,7 +494,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [],
@@ -630,7 +626,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
@@ -820,7 +815,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
@@ -970,7 +964,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [],
@@ -1115,7 +1108,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "1759e0d",
             "inputPorts": [
@@ -1136,7 +1128,7 @@
                     "text": "Data volume",
                     "name": "data_volume",
                     "value": 5,
-                    "defaultValue": "5",
+                    "defaultValue": "",
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
@@ -1148,7 +1140,7 @@
                     "text": "Group end",
                     "name": "group_end",
                     "value": false,
-                    "defaultValue": "False",
+                    "defaultValue": "",
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
@@ -1160,7 +1152,7 @@
                     "text": "Check file path exists",
                     "name": "check_filepath_exists",
                     "value": true,
-                    "defaultValue": "True",
+                    "defaultValue": "",
                     "description": "Perform a check to make sure the file path exists before proceeding with the application",
                     "readonly": false,
                     "type": "Boolean",
@@ -1223,7 +1215,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "1759e0d",
             "inputPorts": [
@@ -1253,7 +1244,7 @@
                     "text": "Data volume",
                     "name": "data_volume",
                     "value": 5,
-                    "defaultValue": "5",
+                    "defaultValue": "",
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
@@ -1265,7 +1256,7 @@
                     "text": "Group end",
                     "name": "group_end",
                     "value": false,
-                    "defaultValue": "False",
+                    "defaultValue": "",
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
@@ -1277,7 +1268,7 @@
                     "text": "Check file path exists",
                     "name": "check_filepath_exists",
                     "value": true,
-                    "defaultValue": "True",
+                    "defaultValue": "",
                     "description": "Perform a check to make sure the file path exists before proceeding with the application",
                     "readonly": false,
                     "type": "Boolean",
@@ -1340,7 +1331,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
@@ -1367,7 +1357,7 @@
                     "IdText": "correlation",
                     "text": "Correlation",
                     "event": false,
-                    "type": "float",
+                    "type": "Unknown",
                     "description": " Numpy array containing a single value, the (normalized) cross correlation between two series."
                 }
             ],
@@ -1378,7 +1368,7 @@
                     "text": "appclass",
                     "name": "appclass",
                     "value": "dlg_lowpass_components.LPCorrelate",
-                    "defaultValue": "dlg_lowpass_components.LPCorrelate",
+                    "defaultValue": "",
                     "description": "Import direction for application class",
                     "readonly": true,
                     "type": "String",
@@ -1390,7 +1380,7 @@
                     "text": "Execution Time",
                     "name": "execution_time",
                     "value": 5,
-                    "defaultValue": "5",
+                    "defaultValue": "",
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
@@ -1402,7 +1392,7 @@
                     "text": "No. of CPUs",
                     "name": "num_cpus",
                     "value": 1,
-                    "defaultValue": "1",
+                    "defaultValue": "",
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
@@ -1415,8 +1405,8 @@
                 {
                     "text": "Normalize Signal",
                     "name": "normalize",
-                    "value": false,
-                    "defaultValue": "false",
+                    "value": true,
+                    "defaultValue": "",
                     "description": "Whether to normalize the input signals (True) or not (False).",
                     "readonly": false,
                     "type": "Boolean",
@@ -1428,7 +1418,7 @@
                     "text": "Double Precision",
                     "name": "doubleprecision",
                     "value": false,
-                    "defaultValue": "false",
+                    "defaultValue": "",
                     "description": "Whether to use double (true) or float (false) precision.",
                     "readonly": false,
                     "type": "Boolean",
@@ -1466,7 +1456,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "1759e0d",
             "inputPorts": [
@@ -1496,7 +1485,7 @@
                     "text": "Data volume",
                     "name": "data_volume",
                     "value": 5,
-                    "defaultValue": "5",
+                    "defaultValue": "",
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
@@ -1508,7 +1497,7 @@
                     "text": "Group end",
                     "name": "group_end",
                     "value": false,
-                    "defaultValue": "False",
+                    "defaultValue": "",
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
@@ -1536,77 +1525,88 @@
             "fromPort": "efd28c03-9e19-4349-9e98-eeb669c11d2f",
             "to": -5,
             "toPort": "158b2d13-a95c-4208-b73b-d5a85c2fab1c",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -6,
             "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
             "to": -3,
             "toPort": "5c8cdc74-bc8d-4518-9ed3-6e2a16f4474e",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -3,
             "fromPort": "47056a16-fe23-4174-a10d-eec78559f7e5",
             "to": -8,
             "toPort": "dec03f67-d298-45e4-9234-0edcd07a5190",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -8,
             "fromPort": "5a57b651-73f9-493a-ac53-088dae43957d",
             "to": -7,
             "toPort": "f1dff71f-6871-438e-a056-c0f03c0ad430",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -5,
             "fromPort": "45822df7-fb73-4d24-871d-fa10b072d325",
             "to": -7,
             "toPort": "9f22db39-a044-4c21-bcd7-cc412dc32efb",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -1,
             "fromPort": "519622dc-698a-469b-ad0e-63c124377c8e",
             "to": -6,
             "toPort": "8943e2d1-28e6-4d9a-b315-b500daea299b",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -9,
             "fromPort": "926b0a56-bf60-4b29-94a1-ea0238077f23",
             "to": -10,
             "toPort": "9512db78-c1ca-4704-82cb-27cadee04de9",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -7,
             "fromPort": "7d5de86b-6c54-49ed-8e41-89562feb8f3f",
             "to": -9,
             "toPort": "ccded268-affe-42d1-82ad-c64fd780871e",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -10,
             "fromPort": "b57de1ed-682d-474a-84e2-4c5aaa9a873c",
             "to": -4,
             "toPort": "ee1e2726-152d-480d-b356-e4334aa5d894",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -1,
             "fromPort": "519622dc-698a-469b-ad0e-63c124377c8e",
             "to": -11,
             "toPort": "18cbe819-bc11-4caa-90da-b81fe5994cdb",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -11,
             "fromPort": "97f61e7f-c020-4b12-84cd-b090add4bee2",
             "to": -10,
             "toPort": "db100a5c-9f58-4021-a9b8-f42585f35d59",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         }
     ]
 }
