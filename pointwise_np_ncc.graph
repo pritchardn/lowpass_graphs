@@ -14,7 +14,7 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 0,
-        "numLGNodes": 11
+        "numLGNodes": 12
     },
     "nodeDataArray": [
         {
@@ -178,8 +178,8 @@
             "key": -6,
             "text": "signal",
             "description": "In-memory storage of intermediate data products",
-            "x": 407.5,
-            "y": 101.5,
+            "x": 408.7738918414871,
+            "y": 102.77389184148709,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1439,15 +1439,164 @@
             "outputApplicationDescription": ""
         },
         {
-            "category": "Memory",
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -12,
+            "text": "LPFilterPointwiseNP",
+            "description": "Implements a lowpass filter via pointwise convolution with numpy",
+            "x": 1007.1860373669334,
+            "y": -142.09183540737308,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "dlg_lowpass_components",
+            "sha": "d6ecc621",
+            "inputPorts": [
+                {
+                    "Id": "306348f2-d2ed-461f-864c-2a5b3b3e04e6",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "Unknown",
+                    "description": " Numpy array containing incoming signal (string dump of floats)"
+                },
+                {
+                    "Id": "c343d6ec-1729-4f42-96de-e57040311d46",
+                    "IdText": "window",
+                    "text": "Window",
+                    "event": false,
+                    "type": "Unknown",
+                    "description": " Numpy array containing the filter window (string dump of floats)"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "b78ee313-8775-456e-aff7-9171762f8e94",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "Complex",
+                    "description": " Numpy array containing final signal (complex)"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg_lowpass_components.LPFilterPointwiseNP",
+                    "defaultValue": "",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Double Precision",
+                    "name": "doubleprecision",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Whether to use double (true) or float (false) precision.",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing incoming signal (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing the filter window (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (complex)",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "key": -11,
-            "text": "signal",
-            "description": "In-memory storage of intermediate data products",
-            "x": 784.1089763143191,
-            "y": -70.87174766170303,
+            "text": "Signal",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 1212.4374705324083,
+            "y": -18.063619976975957,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1457,24 +1606,24 @@
             "subject": null,
             "expanded": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "1759e0d",
+            "sha": "19a6f70",
             "inputPorts": [
                 {
-                    "Id": "2b28dbb6-d64c-4223-9f02-48b57c855408",
+                    "Id": "ce5ccbe8-21ee-4c0f-a400-fce677729808",
                     "IdText": "signal",
-                    "text": "signal",
+                    "text": "Signal",
                     "event": false,
-                    "type": "signal",
+                    "type": "Complex",
                     "description": ""
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "325b04e8-eb41-4109-b199-672d2c9f6584",
+                    "Id": "27bce00b-2355-4d5e-9694-eaa6d035015a",
                     "IdText": "signal",
-                    "text": "signal",
+                    "text": "Signal A",
                     "event": false,
-                    "type": "signal",
+                    "type": "Complex",
                     "description": ""
                 }
             ],
@@ -1485,7 +1634,7 @@
                     "text": "Data volume",
                     "name": "data_volume",
                     "value": 5,
-                    "defaultValue": "",
+                    "defaultValue": "5",
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
@@ -1497,10 +1646,46 @@
                     "text": "Group end",
                     "name": "group_end",
                     "value": false,
-                    "defaultValue": "",
+                    "defaultValue": "False",
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -1585,26 +1770,42 @@
             "closesLoop": false
         },
         {
-            "from": -1,
-            "fromPort": "c00f1e72-b819-4594-a010-e66ad26d0903",
+            "from": -4,
+            "fromPort": "f3cbf6b8-5672-4fa7-8b24-9db36d15aacf",
+            "to": -9,
+            "toPort": "e2cdd451-0c16-49e9-8e8e-02d54c604861",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -6,
+            "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
+            "to": -12,
+            "toPort": "306348f2-d2ed-461f-864c-2a5b3b3e04e6",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -5,
+            "fromPort": "45822df7-fb73-4d24-871d-fa10b072d325",
+            "to": -12,
+            "toPort": "c343d6ec-1729-4f42-96de-e57040311d46",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -12,
+            "fromPort": "b78ee313-8775-456e-aff7-9171762f8e94",
             "to": -11,
-            "toPort": "2b28dbb6-d64c-4223-9f02-48b57c855408",
+            "toPort": "ce5ccbe8-21ee-4c0f-a400-fce677729808",
             "loop_aware": "0",
             "closesLoop": false
         },
         {
             "from": -11,
-            "fromPort": "325b04e8-eb41-4109-b199-672d2c9f6584",
+            "fromPort": "27bce00b-2355-4d5e-9694-eaa6d035015a",
             "to": -4,
             "toPort": "3cfe7553-9f93-4301-b30b-a437542fa2f7",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": -4,
-            "fromPort": "f3cbf6b8-5672-4fa7-8b24-9db36d15aacf",
-            "to": -9,
-            "toPort": "e2cdd451-0c16-49e9-8e8e-02d54c604861",
             "loop_aware": "0",
             "closesLoop": false
         }
