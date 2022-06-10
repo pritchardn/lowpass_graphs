@@ -5,16 +5,16 @@
         "repoBranch": "main",
         "repo": "pritchardn/lowpass_graphs",
         "filePath": "fft_np_ncc.graph",
-        "eagleVersion": "v4.2.0",
-        "eagleCommitHash": "b34ff925a5c6883fdba168c073afeffb9a9fc446",
+        "eagleVersion": "Unknown",
+        "eagleCommitHash": "Unknown",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
         "gitUrl": "",
         "lastModifiedName": "",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": "",
-        "numLGNodes": 11
+        "lastModifiedDatetime": 0,
+        "numLGNodes": 12
     },
     "nodeDataArray": [
         {
@@ -25,8 +25,8 @@
             "key": -5,
             "text": "window",
             "description": "In-memory storage of intermediate data products",
-            "x": 712,
-            "y": 201.5,
+            "x": 716.8684012714222,
+            "y": 203.12280042380738,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -35,7 +35,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "f49a804",
             "inputPorts": [
@@ -179,8 +178,8 @@
             "key": -6,
             "text": "signal",
             "description": "In-memory storage of intermediate data products",
-            "x": 371.5,
-            "y": 111.5,
+            "x": 376.3684012714221,
+            "y": 114.74560084761475,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -189,7 +188,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "f49a804",
             "inputPorts": [
@@ -343,7 +341,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "b8c2322",
             "inputPorts": [
@@ -497,7 +494,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
@@ -677,8 +673,8 @@
             "key": -2,
             "text": "LP_WindowGenerator",
             "description": "Generates a Hann window for low-pass filtering.",
-            "x": 522.25,
-            "y": 232.25,
+            "x": 449.22398092866837,
+            "y": 230.62719957619262,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -687,7 +683,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [],
@@ -810,7 +805,7 @@
             "key": -3,
             "text": "LPFilterfftNP",
             "description": "Implements a lowpass filter via fft with numpy",
-            "x": 925.25,
+            "x": 926.8728004238073,
             "y": 136.25,
             "width": 200,
             "height": 72,
@@ -820,7 +815,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
@@ -970,7 +964,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [],
@@ -1115,7 +1108,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "dlg_lowpass_components",
             "sha": "d6ecc621",
             "inputPorts": [
@@ -1224,87 +1216,6 @@
             "outputApplicationDescription": ""
         },
         {
-            "category": "Memory",
-            "isGroup": false,
-            "color": "#2c2c2c",
-            "drawOrderHint": 0,
-            "key": -11,
-            "text": "signal",
-            "description": "In-memory storage of intermediate data products",
-            "x": 469.4264287580534,
-            "y": 357.96272040499906,
-            "width": 200,
-            "height": 72,
-            "collapsed": false,
-            "flipPorts": false,
-            "streaming": false,
-            "precious": false,
-            "subject": null,
-            "expanded": false,
-            "readonly": true,
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "1759e0d",
-            "inputPorts": [
-                {
-                    "Id": "4101ef37-193d-4cf7-81ad-b51ad566090a",
-                    "IdText": "signal",
-                    "text": "signal",
-                    "event": false,
-                    "type": "signal",
-                    "description": ""
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "63155e6d-fabe-487e-abb1-295a45ebf0b7",
-                    "IdText": "signal",
-                    "text": "signal",
-                    "event": false,
-                    "type": "signal",
-                    "description": ""
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": 5,
-                    "defaultValue": "",
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": false,
-                    "defaultValue": "",
-                    "description": "Is this node the end of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
             "category": "File",
             "isGroup": false,
             "color": "#2c2c2c",
@@ -1322,7 +1233,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "1759e0d",
             "inputPorts": [
@@ -1430,7 +1340,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "1759e0d",
             "inputPorts": [
@@ -1528,6 +1437,271 @@
             "outputApplicationType": "None",
             "outputApplicationKey": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -10,
+            "text": "LPFilterfftNP",
+            "description": "Implements a lowpass filter via fft with numpy",
+            "x": 911.1711911000452,
+            "y": -161.81888306624455,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "dlg_lowpass_components",
+            "sha": "d6ecc621",
+            "inputPorts": [
+                {
+                    "Id": "5eec6703-2295-42ca-acfd-de96426a1264",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "Unknown",
+                    "description": " Numpy array containing incoming signal (string dump of floats)"
+                },
+                {
+                    "Id": "1194f85e-58a4-4c9c-99f3-8f3b0bce36c8",
+                    "IdText": "window",
+                    "text": "Window",
+                    "event": false,
+                    "type": "Unknown",
+                    "description": " Numpy array containing the filter window (string dump of floats)"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2af1c896-83e2-477a-bc2f-b5830348c5b4",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "Complex",
+                    "description": " Numpy array containing final signal (complex)"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg_lowpass_components.LPFilterFFTNP",
+                    "defaultValue": "",
+                    "description": "Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Double Precision",
+                    "name": "doubleprecision",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Whether to use double (true) or float (false) precision.",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing incoming signal (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Window",
+                    "name": "window",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing the filter window (string dump of floats)",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Signal",
+                    "name": "signal",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": " Numpy array containing final signal (complex)",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -11,
+            "text": "Signal",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 1236.1409822923401,
+            "y": -8.680473222058403,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "19a6f70",
+            "inputPorts": [
+                {
+                    "Id": "91f78900-d77f-466d-80af-f8e3f5bda7f3",
+                    "IdText": "signal",
+                    "text": "Signal",
+                    "event": false,
+                    "type": "Complex",
+                    "description": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "876b9426-0c29-4a98-96ef-008589b11351",
+                    "IdText": "signal",
+                    "text": "Signal A",
+                    "event": false,
+                    "type": "Complex",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -1536,77 +1710,104 @@
             "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
             "to": -7,
             "toPort": "383a9912-c798-4cb0-a124-fb10eba5da45",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -7,
             "fromPort": "afd632b1-651d-4694-84ad-1a5520d84b98",
             "to": -8,
             "toPort": "6981b313-619a-4044-b48c-f7a5c213db55",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -2,
             "fromPort": "cd215813-1acd-4b50-a423-4986e3037401",
             "to": -5,
             "toPort": "158b2d13-a95c-4208-b73b-d5a85c2fab1c",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -8,
             "fromPort": "da16a5b3-cfbb-4046-96e0-accde4f05cc7",
             "to": -3,
             "toPort": "cdf63e8e-ca47-4a34-9680-ec094b550e1c",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -5,
             "fromPort": "45822df7-fb73-4d24-871d-fa10b072d325",
             "to": -3,
             "toPort": "129603a5-8eb7-485d-be03-9aa19fc8351f",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -1,
             "fromPort": "0b4561b2-7351-4aa4-9a99-0a6579ee8237",
             "to": -6,
             "toPort": "8943e2d1-28e6-4d9a-b315-b500daea299b",
-            "loop_aware": "0"
-        },
-        {
-            "from": -1,
-            "fromPort": "0b4561b2-7351-4aa4-9a99-0a6579ee8237",
-            "to": -11,
-            "toPort": "4101ef37-193d-4cf7-81ad-b51ad566090a",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -9,
             "fromPort": "85406570-33e3-4e3e-9dc6-4212715dc5a3",
             "to": -12,
             "toPort": "04666099-0975-43e0-a36b-9e263c5ea92c",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -3,
             "fromPort": "46b86bfa-0a17-4a62-a025-7a132e62dead",
             "to": -4,
             "toPort": "c3f68150-d5b2-424b-9246-e8cefadcc870",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -4,
             "fromPort": "723bda52-80fb-402d-9a12-71db2adf0e7a",
             "to": -9,
             "toPort": "9bc7ee59-fb44-43df-8006-a943c721d4ed",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -6,
+            "fromPort": "ee78054f-e51b-4140-b2da-0e93a90a6412",
+            "to": -10,
+            "toPort": "5eec6703-2295-42ca-acfd-de96426a1264",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -5,
+            "fromPort": "45822df7-fb73-4d24-871d-fa10b072d325",
+            "to": -10,
+            "toPort": "1194f85e-58a4-4c9c-99f3-8f3b0bce36c8",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -10,
+            "fromPort": "2af1c896-83e2-477a-bc2f-b5830348c5b4",
+            "to": -11,
+            "toPort": "91f78900-d77f-466d-80af-f8e3f5bda7f3",
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -11,
-            "fromPort": "63155e6d-fabe-487e-abb1-295a45ebf0b7",
+            "fromPort": "876b9426-0c29-4a98-96ef-008589b11351",
             "to": -9,
             "toPort": "a2f2e174-d932-4069-9708-3eddfc9efb65",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         }
     ]
 }
