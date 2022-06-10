@@ -484,7 +484,7 @@
             "key": -3,
             "text": "LPFilterPointwiseNP",
             "description": "Implements a lowpass filter via pointwise convolution with numpy",
-            "x": 969.3515515861142,
+            "x": 966.8037679031399,
             "y": 118.1643697197868,
             "width": 200,
             "height": 72,
@@ -573,42 +573,6 @@
                     "description": "Whether to use double (true) or float (false) precision.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing incoming signal (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing the filter window (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -729,18 +693,6 @@
                     "description": "The frequency of the low-pass filter",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (purely real (floats))",
-                    "readonly": false,
-                    "type": "Unknown",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -909,30 +861,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing incoming signal (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (purely real (floats))",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
                 }
             ],
             "inputAppFields": [],
@@ -1062,18 +990,6 @@
                     "description": "A dictionary containing several values defining the properties of an interleaved noise. noise, stddiv-deviation, frequency, random randomseed, noisemultiplier",
                     "readonly": false,
                     "type": "Json",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (purely real (floats))",
-                    "readonly": false,
-                    "type": "Unknown",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -1535,42 +1451,6 @@
                     "description": "Whether to use double (true) or float (false) precision.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing incoming signal (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing the filter window (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
                     "precious": false,
                     "options": [],
                     "positional": false
