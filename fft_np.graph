@@ -5,8 +5,8 @@
         "repoBranch": "main",
         "repo": "pritchardn/lowpass_graphs",
         "filePath": "fft_np.graph",
-        "eagleVersion": "Unknown",
-        "eagleCommitHash": "Unknown",
+        "eagleVersion": "v4.4.0",
+        "eagleCommitHash": "89685c170ab50551bd9d85e9ddd77f94695ab0bf",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
@@ -112,44 +112,7 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
+            "applicationArgs": [],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -229,80 +192,7 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [
-                {
-                    "text": "window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
+            "applicationArgs": [],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -382,80 +272,7 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
+            "applicationArgs": [],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -535,80 +352,7 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
+            "applicationArgs": [],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
@@ -772,30 +516,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing incoming signal (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (purely real (floats))",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
                 }
             ],
             "inputAppFields": [],
@@ -817,7 +537,7 @@
             "key": -2,
             "text": "LP_WindowGenerator",
             "description": "Generates a Hann window for low-pass filtering.",
-            "x": 522.25,
+            "x": 526.25,
             "y": 232.25,
             "width": 200,
             "height": 72,
@@ -913,18 +633,6 @@
                     "description": "The frequency of the low-pass filter",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (purely real (floats))",
-                    "readonly": false,
-                    "type": "Unknown",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -1033,47 +741,11 @@
                 {
                     "text": "Double Precision",
                     "name": "doubleprecision",
-                    "value": false,
+                    "value": true,
                     "defaultValue": "",
                     "description": "Whether to use double (true) or float (false) precision.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing incoming signal (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Window",
-                    "name": "window",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing the filter window (string dump of floats)",
-                    "readonly": false,
-                    "type": "Unknown",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Signal",
-                    "name": "signal",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Numpy array containing final signal (complex)",
-                    "readonly": false,
-                    "type": "Complex",
                     "precious": false,
                     "options": [],
                     "positional": false
